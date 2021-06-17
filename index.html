@@ -3,6 +3,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="https://aux.iconspalace.com/uploads/1280714478721889687.png" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,37 +12,70 @@
         body{
             margin: 0;
             font-family: 'Anonymous Pro', monospace;
-            background-color: black;
-            
+            background-color: black;  
+            overflow: hidden;        
         }
+
         #heading{
             color: silver;
         }
+        #code{
+            display: inline-block;
+        }
         p{        
             font-size: 20px;
-            color: aqua;
+            color: white;
             padding-left: 40px;
-            padding-top: 50px;
+            padding-top: 100px;
+            line-height: 25px;            
         }
         span{
             color: coral;
         }
+        #curly{
+            color: violet;
+        }
+        #green{
+            color: #04aa6d;
+        }
+        #aqua{
+            color: aqua;
+        }
+        a{
+            color: #04aa6d;
+        }
+        #cont{
+            height: 100vh;
+            display: flex;
+        }
+        #one{
+            width: 600px;
+        }
+        #two{
+            margin-left: 250px;
+            margin-top: 150px;
+            box-sizing: border-box;
+        }   
     </style>
 </head>
 <body>
+    <div id="cont">
+    <div id="one">
     <p class="type-it">
         <span id="heading">//This is the portfolio of dheerajgupta</span><br><br>
-        class <span>dheerajgupta</span>{<br>
-    public:<br>
-    &nbsp;&nbsp;char name="Dheeraj Gupta";<br>
-    char linkedin_url="link";<br>
-    char github_url="link";<br>
-    char resume="resume";<br>
-    }<br>
-    dheerajgupta object;<br>
+       <span id="aqua">var</span>  <span>portfolio = </span><span id="curly">{</span><br>
+    &nbsp;&nbsp; name = <span id="green">"Dheeraj Gupta"</span>,<br>
+    &nbsp;&nbsp; linkedin_url = <span id="green"><a href="https://www.linkedin.com/in/dheeraj-gupta-335a3b19a/">getLinkedIn()</a></span>,<br>
+    &nbsp;&nbsp; github_url= <span id="green"><a href="https://github.com/KygoSkyrus">getGithub()</a></span>,<br>
+    &nbsp;&nbsp; blog_url = <span id="green"><a href="">getBlog()</a></span>,<br>
+    &nbsp;&nbsp; contact1 = <span id="green"><a href="phoneto:0000000000">getOnCall()</a></span>,<br>
+    &nbsp;&nbsp; contact2 = <span id="green"><a href="mailto:guptadheeraj371@gmail.com">getMail()</a></span><br>
+    <span id="curly">}</span>;<br>
     </p>
-    
-</body>
+</div>
+ <div id="two"><img src="https://i.pinimg.com/originals/a7/d9/de/a7d9de5f13a7ce6e6c7ce4becd444348.jpg" width="400px"></div>
+
+    </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.1/typeit.js"></script>
 <script type="text/javascript">
